@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rOt-RQ-vvi">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Whr-fe-YmX">
+            <objects>
+                <navigationController id="rOt-RQ-vvi" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pv8-Nu-vmw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WTH-tK-Qkh" kind="relationship" relationship="rootViewController" id="xMa-9F-Sgd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="apf-Wb-njx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80.5" y="-174.49999999999997"/>
+        </scene>
+        <!--胡丁丁的私人通讯录-->
+        <scene sceneID="6li-1H-GY2">
+            <objects>
+                <viewController id="WTH-tK-Qkh" customClass="HXDLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RWf-c6-Mni"/>
+                        <viewControllerLayoutGuide type="bottom" id="HZh-BQ-DLC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uvf-Ed-gRf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yGo-gk-cuq">
+                                <rect key="frame" x="120" y="299" width="51" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="rmbPasswordSwitch" destination="WTH-tK-Qkh" eventType="valueChanged" id="3Zd-Op-7iU"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="记住密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wW9-qr-wWh">
+                                <rect key="frame" x="44" y="304" width="68" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pjb-BM-woR">
+                                <rect key="frame" x="281" y="299" width="51" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="autoLoginSwitch" destination="WTH-tK-Qkh" eventType="valueChanged" id="PQO-sk-nI5"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="自动登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdr-ao-XfS">
+                                <rect key="frame" x="205" y="304" width="68" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsz-eT-kBE">
+                                <rect key="frame" x="172" y="393" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="登录"/>
+                                <connections>
+                                    <action selector="loginButton" destination="WTH-tK-Qkh" eventType="touchUpInside" id="dGd-6r-0op"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="账号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7a-YP-Kw0">
+                                <rect key="frame" x="64" y="179" width="51" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密码：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5w-r1-oaQ">
+                                <rect key="frame" x="64" y="234" width="51" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入账号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xpj-Rc-d5v">
+                                <rect key="frame" x="116" y="175" width="195" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MYe-4U-qgC">
+                                <rect key="frame" x="116" y="230" width="195" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="胡丁丁的私人通讯录" id="Bcm-oP-rHK"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="accountTextField" destination="xpj-Rc-d5v" id="yRa-kh-3Lj"/>
+                        <outlet property="autoLogin" destination="pjb-BM-woR" id="iEQ-qq-GQc"/>
+                        <outlet property="login" destination="xsz-eT-kBE" id="GRY-iW-jIL"/>
+                        <outlet property="passwordTextField" destination="MYe-4U-qgC" id="u7N-K8-XTJ"/>
+                        <outlet property="rememberPassword" destination="yGo-gk-cuq" id="A63-MZ-fqW"/>
+                        <segue destination="UO5-VB-lGK" kind="show" identifier="loginToContact" id="hbE-Dq-PYy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kyF-g3-WXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="573.5" y="-174.49999999999997"/>
+        </scene>
+        <!--Contact List Table View Controller-->
+        <scene sceneID="Nty-Jb-4b8">
+            <objects>
+                <tableViewController id="UO5-VB-lGK" customClass="HXDContactListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zx0-2T-cqR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="contacts_cell" textLabel="MXf-Bi-ZSS" detailTextLabel="Piy-gd-M8c" style="IBUITableViewCellStyleValue1" id="Nas-dE-6a9" customClass="HXDContactCell">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nas-dE-6a9" id="wrc-Bp-qZ0">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MXf-Bi-ZSS">
+                                            <rect key="frame" x="15" y="12" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Piy-gd-M8c">
+                                            <rect key="frame" x="298.5" y="12" width="41.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <segue destination="rFA-zi-17T" kind="show" id="nau-rH-Kqn"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UO5-VB-lGK" id="ZEE-W6-POb"/>
+                            <outlet property="delegate" destination="UO5-VB-lGK" id="6EA-wN-fVH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="qkH-Yr-qPh">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="aKp-IS-Nad"/>
+                        <barButtonItem key="leftBarButtonItem" title="注销" id="Ahx-9b-9I5">
+                            <connections>
+                                <action selector="cancelButton:" destination="UO5-VB-lGK" id="8qU-VW-0hv"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="添加" id="ot6-xZ-LAq">
+                                <connections>
+                                    <segue destination="lKX-eb-6ad" kind="show" id="bmK-NU-w79"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="删除" id="qve-ES-6qC">
+                                <connections>
+                                    <action selector="trashAction:" destination="UO5-VB-lGK" id="zfs-QT-gYO"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="trashButton" destination="qve-ES-6qC" id="HQt-Hp-ADh"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUC-a4-1PP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.5" y="-174.49999999999997"/>
+        </scene>
+        <!--查看/编辑联系人-->
+        <scene sceneID="Y7r-n8-Trh">
+            <objects>
+                <viewController id="rFA-zi-17T" customClass="HXDEditViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I7o-Qg-HhY"/>
+                        <viewControllerLayoutGuide type="bottom" id="lVK-bW-Tu6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0jo-wd-taR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="姓名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4un-Ur-pZg">
+                                <rect key="frame" x="64" y="140" width="51" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="电话：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkQ-sh-eUZ">
+                                <rect key="frame" x="64" y="195" width="51" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入姓名" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hfJ-Jo-4Ts">
+                                <rect key="frame" x="116" y="136" width="195" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入电话" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Epn-x5-oa3">
+                                <rect key="frame" x="116" y="191" width="195" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZS-ic-STL">
+                                <rect key="frame" x="172" y="269" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="addAction" destination="lKX-eb-6ad" eventType="touchUpInside" id="NHS-Up-Cfq"/>
+                                    <action selector="loginButton" destination="WTH-tK-Qkh" eventType="touchUpInside" id="lsx-PD-l6s"/>
+                                    <action selector="saveAction" destination="rFA-zi-17T" eventType="touchUpInside" id="jLt-ov-JCe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="查看/编辑联系人" id="XgG-hI-tld">
+                        <barButtonItem key="rightBarButtonItem" title="编辑" id="vaL-fL-XoG">
+                            <connections>
+                                <action selector="editOption:" destination="rFA-zi-17T" id="kWT-CJ-pwk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="nameText" destination="hfJ-Jo-4Ts" id="bpV-wt-fmh"/>
+                        <outlet property="phoneText" destination="Epn-x5-oa3" id="Qzz-wV-S1V"/>
+                        <outlet property="saveButton" destination="fZS-ic-STL" id="TpU-vr-eXd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xzy-LK-mzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1580.5" y="217.5"/>
+        </scene>
+        <!--添加联系人-->
+        <scene sceneID="ZJO-Qq-5aL">
+            <objects>
+                <viewController id="lKX-eb-6ad" customClass="HXDAddViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pD0-XZ-ekC"/>
+                        <viewControllerLayoutGuide type="bottom" id="TC2-sB-iGC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vyi-j6-nrQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="姓名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8C-XE-yjM">
+                                <rect key="frame" x="64" y="144" width="51" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="电话：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="256-6q-skZ">
+                                <rect key="frame" x="64" y="199" width="51" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入姓名" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IdK-82-uRW">
+                                <rect key="frame" x="116" y="140" width="195" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入电话" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nk2-qs-KTT">
+                                <rect key="frame" x="116" y="195" width="195" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBX-XT-f0G">
+                                <rect key="frame" x="172" y="272" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="添加"/>
+                                <connections>
+                                    <action selector="addAction" destination="lKX-eb-6ad" eventType="touchUpInside" id="z9s-rP-QLb"/>
+                                    <action selector="loginButton" destination="WTH-tK-Qkh" eventType="touchUpInside" id="JRY-we-UZW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="添加联系人" id="7XZ-PH-fkz"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="addButton" destination="iBX-XT-f0G" id="fDc-1U-OW9"/>
+                        <outlet property="nameText" destination="IdK-82-uRW" id="Ube-82-7sQ"/>
+                        <outlet property="phoneText" destination="nk2-qs-KTT" id="VWP-fa-ulj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nFl-jT-Xdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1580.5" y="-539.5"/>
+        </scene>
+    </scenes>
+</document>
